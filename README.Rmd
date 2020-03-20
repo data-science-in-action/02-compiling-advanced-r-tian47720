@@ -1,0 +1,37 @@
+---
+title: "Second Homework"
+author: "tian47720"
+date: "2020/3/20"
+output: pdf_document
+---
+
+## Error in cat(paste0(contributors$desc, collapse = ", "))
+
+
+The full command is: `contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE,encoding = "UTF-8")`
+The code, `encoding="UTF-8"`, is new adding.
+
+## Error in loadNamespace(name) : 'emo'
+
+First, download *Rtools* to the computer in disk C, 
+Second, select "Add Rtools to system PATH".
+Third, input the command in git:`git config --global http.sslBackend "openssl"`,
+`git config --global http.sslCAInfo "D:\git\mingw64\ssl\cert.pem"`
+Fourth, install the package *usethis*,*devtools*,*hool*, and then input the command: `library(usethis)`, `library(devtools)`, `devtools::install_github("hadley/sloop")`,`devtools::install_github(" Hadley /emo")`.
+
+## Error in library(dplyr) or Error in loadNamespace(name) :'sessioninfo'
+
+This is missing packages. We can Using `install.packages()` to solve it. The packages I installed are *dplyr*,*sessioninfo*,*lobstr*, *devtools*, *sloop*,*RSQLite*,*zeallot*,*profvis*,*bench*,*ggbeeswarm*.
+
+## In system(cmd) : 'make' not found
+
+Add *Rtools* to the system path, then restart Rstudio.
+
+## Warning message: In system2(..., stdout = if (use_file_stdout()) f1 else FALSE, stderr = f2) : '"xelatex"' not found.
+
+Download *MiKTex*,add it to the system path,then update the software at *MikTex Console*
+
+## Package fontspec Error: The font "Inconsolata" and "Andale Mono" cannot be found.
+
+Download the *Inconsolata* font and *Andale Mono* font, and place them in the C: \ Windows \ Fonts.
+
